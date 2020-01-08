@@ -1,0 +1,300 @@
+15.206.98.157  route_table_id: "" => "rtb-0b98b09654dbf1c5a"
+  subnet_id:      "" => "subnet-028d423f0824c48f9"
+module.infra.aws_route_table_association.route_public_subnets[0]: Creation compl
+ete after 1s (ID: rtbassoc-004dd5a8b4ba2a5d3)
+module.infra.aws_route_table_association.route_public_subnets[1]: Creation compl
+ete after 1s (ID: rtbassoc-0df9f54a77959d425)
+module.pks.aws_security_group.pks_api_lb_security_group: Creation complete after
+ 8s (ID: sg-0f0363686ef94c39b)
+module.infra.aws_nat_gateway.nat: Still creating... (10s elapsed)
+module.infra.aws_route53_zone.pcf_zone: Still creating... (30s elapsed)
+module.infra.aws_route53_zone.pcf_zone: Creation complete after 30s (ID: ZC57PC5
+A2PG5N)
+module.pks.aws_lb.pks_api: Still creating... (11s elapsed)
+module.ops_manager.aws_instance.ops_manager: Still creating... (10s elapsed)
+module.infra.aws_nat_gateway.nat: Still creating... (20s elapsed)
+module.pks.aws_lb.pks_api: Still creating... (21s elapsed)
+module.ops_manager.aws_instance.ops_manager: Still creating... (20s elapsed)
+module.infra.aws_nat_gateway.nat: Still creating... (30s elapsed)
+module.pks.aws_lb.pks_api: Still creating... (31s elapsed)
+module.ops_manager.aws_instance.ops_manager: Still creating... (30s elapsed)
+module.ops_manager.aws_instance.ops_manager: Creation complete after 31s (ID: i-
+03d9ea77ffff509cb)
+module.ops_manager.aws_eip.ops_manager_attached: Creating...
+  allocation_id:     "" => "<computed>"
+  association_id:    "" => "<computed>"
+  domain:            "" => "<computed>"
+  instance:          "" => "i-03d9ea77ffff509cb"
+  network_interface: "" => "<computed>"
+  private_ip:        "" => "<computed>"
+  public_ip:         "" => "<computed>"
+  public_ipv4_pool:  "" => "<computed>"
+  tags.%:            "" => "6"
+  tags.Application:  "" => "Cloud Foundry"
+  tags.Environment:  "" => "pks-dev"
+  tags.Name:         "" => "pks-dev-om-eip"
+  tags.Owner:        "" => "SudevM"
+  tags.Project:      "" => "pks-dev"
+  tags.Team:         "" => "Dev"
+  vpc:               "" => "true"
+module.ops_manager.aws_eip.ops_manager_attached: Creation complete after 4s (ID:
+ eipalloc-03486f75a7a51c13e)
+module.ops_manager.aws_route53_record.ops_manager_attached_eip: Creating...
+  allow_overwrite:    "" => "true"
+  fqdn:               "" => "<computed>"
+  name:               "" => "pcf.pks-dev.pks.ml.com"
+  records.#:          "" => "1"
+  records.3724576816: "" => "15.206.98.157"
+  ttl:                "" => "300"
+  type:               "" => "A"
+  zone_id:            "" => "ZC57PC5A2PG5N"
+module.infra.aws_nat_gateway.nat: Still creating... (40s elapsed)
+module.pks.aws_lb.pks_api: Still creating... (41s elapsed)
+module.ops_manager.aws_route53_record.ops_manager_attached_eip: Still creating..
+. (10s elapsed)
+module.infra.aws_nat_gateway.nat: Still creating... (50s elapsed)
+module.pks.aws_lb.pks_api: Still creating... (51s elapsed)
+module.ops_manager.aws_route53_record.ops_manager_attached_eip: Still creating..
+. (21s elapsed)
+module.infra.aws_nat_gateway.nat: Still creating... (1m0s elapsed)
+module.pks.aws_lb.pks_api: Still creating... (1m1s elapsed)
+module.ops_manager.aws_route53_record.ops_manager_attached_eip: Still creating..
+. (31s elapsed)
+module.infra.aws_nat_gateway.nat: Still creating... (1m10s elapsed)
+module.pks.aws_lb.pks_api: Still creating... (1m11s elapsed)
+module.ops_manager.aws_route53_record.ops_manager_attached_eip: Creation complet
+e after 36s (ID: ZC57PC5A2PG5N_pcf.pks-dev.pks.ml.com_A)
+module.infra.aws_nat_gateway.nat: Still creating... (1m20s elapsed)
+module.pks.aws_lb.pks_api: Still creating... (1m21s elapsed)
+module.infra.aws_nat_gateway.nat: Still creating... (1m30s elapsed)
+module.pks.aws_lb.pks_api: Still creating... (1m31s elapsed)
+module.infra.aws_nat_gateway.nat: Creation complete after 1m37s (ID: nat-0118c56
+b69435a4c0)
+module.infra.aws_route.toggle_internet[1]: Creating...
+  destination_cidr_block:     "" => "0.0.0.0/0"
+  destination_prefix_list_id: "" => "<computed>"
+  egress_only_gateway_id:     "" => "<computed>"
+  gateway_id:                 "" => "<computed>"
+  instance_id:                "" => "<computed>"
+  instance_owner_id:          "" => "<computed>"
+  nat_gateway_id:             "" => "nat-0118c56b69435a4c0"
+  network_interface_id:       "" => "<computed>"
+  origin:                     "" => "<computed>"
+  route_table_id:             "" => "rtb-0c681e2f84fe7012e"
+  state:                      "" => "<computed>"
+module.infra.aws_route.toggle_internet[0]: Creating...
+  destination_cidr_block:     "" => "0.0.0.0/0"
+  destination_prefix_list_id: "" => "<computed>"
+  egress_only_gateway_id:     "" => "<computed>"
+  gateway_id:                 "" => "<computed>"
+  instance_id:                "" => "<computed>"
+  instance_owner_id:          "" => "<computed>"
+  nat_gateway_id:             "" => "nat-0118c56b69435a4c0"
+  network_interface_id:       "" => "<computed>"
+  origin:                     "" => "<computed>"
+  route_table_id:             "" => "rtb-0718d11587393d59b"
+  state:                      "" => "<computed>"
+module.infra.aws_route.toggle_internet[1]: Creation complete after 1s (ID: r-rtb
+-0c681e2f84fe7012e1080289494)
+module.infra.aws_route.toggle_internet[0]: Creation complete after 1s (ID: r-rtb
+-0718d11587393d59b1080289494)
+module.pks.aws_lb.pks_api: Still creating... (1m41s elapsed)
+module.pks.aws_lb.pks_api: Still creating... (1m51s elapsed)
+module.pks.aws_lb.pks_api: Still creating... (2m1s elapsed)
+module.pks.aws_lb.pks_api: Still creating... (2m11s elapsed)
+module.pks.aws_lb.pks_api: Still creating... (2m21s elapsed)
+module.pks.aws_lb.pks_api: Still creating... (2m31s elapsed)
+module.pks.aws_lb.pks_api: Creation complete after 2m32s (ID: arn:aws:elasticloa
+dbalancing:ap-south-1...r/net/pks-dev-pks-api/a1cf9074afd742c6)
+module.pks.aws_lb_listener.pks_api_9021: Creating...
+  arn:                               "" => "<computed>"
+  default_action.#:                  "" => "1"
+  default_action.0.order:            "" => "<computed>"
+  default_action.0.target_group_arn: "" => "arn:aws:elasticloadbalancing:ap-sout
+h-1:118772875992:targetgroup/pks-dev-pks-tg-9021/1f41b8c53ed63236"
+  default_action.0.type:             "" => "forward"
+  load_balancer_arn:                 "" => "arn:aws:elasticloadbalancing:ap-sout
+h-1:118772875992:loadbalancer/net/pks-dev-pks-api/a1cf9074afd742c6"
+  port:                              "" => "9021"
+  protocol:                          "" => "TCP"
+  ssl_policy:                        "" => "<computed>"
+module.pks.aws_lb_listener.pks_api_8443: Creating...
+  arn:                               "" => "<computed>"
+  default_action.#:                  "" => "1"
+  default_action.0.order:            "" => "<computed>"
+  default_action.0.target_group_arn: "" => "arn:aws:elasticloadbalancing:ap-sout
+h-1:118772875992:targetgroup/pks-dev-pks-tg-8443/fb31ec6844dd7b4e"
+  default_action.0.type:             "" => "forward"
+  load_balancer_arn:                 "" => "arn:aws:elasticloadbalancing:ap-sout
+h-1:118772875992:loadbalancer/net/pks-dev-pks-api/a1cf9074afd742c6"
+  port:                              "" => "8443"
+  protocol:                          "" => "TCP"
+  ssl_policy:                        "" => "<computed>"
+module.pks.aws_route53_record.pks_api_dns: Creating...
+  alias.#:                                 "" => "1"
+  alias.2858567806.evaluate_target_health: "" => "true"
+  alias.2858567806.name:                   "" => "pks-dev-pks-api-a1cf9074afd742
+c6.elb.ap-south-1.amazonaws.com"
+  alias.2858567806.zone_id:                "" => "ZVDDRBQ08TROA"
+  allow_overwrite:                         "" => "true"
+  fqdn:                                    "" => "<computed>"
+  name:                                    "" => "api.pks.pks-dev.pks.ml.com"
+  type:                                    "" => "A"
+  zone_id:                                 "" => "ZC57PC5A2PG5N"
+module.pks.aws_lb_listener.pks_api_9021: Creation complete after 2s (ID: arn:aws
+:elasticloadbalancing:ap-south-1...-api/a1cf9074afd742c6/fb3e5b167575cce1)
+module.pks.aws_lb_listener.pks_api_8443: Creation complete after 2s (ID: arn:aws
+:elasticloadbalancing:ap-south-1...-api/a1cf9074afd742c6/8c7128162bdd57d1)
+module.pks.aws_route53_record.pks_api_dns: Still creating... (10s elapsed)
+module.pks.aws_route53_record.pks_api_dns: Still creating... (20s elapsed)
+module.pks.aws_route53_record.pks_api_dns: Still creating... (30s elapsed)
+module.pks.aws_route53_record.pks_api_dns: Creation complete after 31s (ID: ZC57
+PC5A2PG5N_api.pks.pks-dev.pks.ml.com_A)
+
+Apply complete! Resources: 61 added, 0 changed, 0 destroyed.
+
+Outputs:
+
+azs = [
+    ap-south-1a,
+    ap-south-1c
+]
+dns_zone_id = ZC57PC5A2PG5N
+env_dns_zone_name_servers = [
+    ns-11.awsdns-01.com,
+    ns-1269.awsdns-30.org,
+    ns-1612.awsdns-09.co.uk,
+    ns-887.awsdns-46.net
+]
+iaas = aws
+infrastructure_subnet_availability_zones = [
+    ap-south-1a,
+    ap-south-1c
+]
+infrastructure_subnet_cidrs = [
+    10.0.16.0/28,
+    10.0.16.16/28
+]
+infrastructure_subnet_gateways = [
+    10.0.16.1,
+    10.0.16.17
+]
+infrastructure_subnet_ids = [
+    subnet-0bcf9d079b2770ccb,
+    subnet-0e66beb842d8bd0f2
+]
+infrastructure_subnets = [
+    subnet-0bcf9d079b2770ccb,
+    subnet-0e66beb842d8bd0f2
+]
+network_name = vpc-0eb0d33e71e6cf27c
+ops_manager_bucket = pks-dev-ops-manager-bucket-66816
+ops_manager_dns = pcf.pks-dev.pks.ml.com
+ops_manager_iam_instance_profile_name = pks-dev_ops_manager
+ops_manager_iam_user_access_key = AKIARXJ3KILMJOBGFXOO
+ops_manager_iam_user_name = pks-dev_om_user
+ops_manager_iam_user_secret_key = <sensitive>
+ops_manager_ip = 10.0.0.108
+ops_manager_private_ip = 10.0.0.108
+ops_manager_public_ip = 15.206.98.157
+ops_manager_security_group_id = sg-088a7d8b6c4530964
+ops_manager_ssh_private_key = <sensitive>
+ops_manager_ssh_public_key = ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQCiHxToCSy9ZMW
+xHlTtTButRcsZzRfH1+2Ccf3RSFolV7DTdUGE7RZ2Bzn8GB4zUKBUDGi6qSM3TWz7WYuynMr2SJQ1xpK
+kDrdG79oEFxT5RIzsMSkAE+nJ9QBWEER9XOTrmuYzKnPHS04KTh53lEFrdSxKBZ7n3wgNkRj3buIwpgf
+p95fqO2UrzOB0TfII5HtBnSo/xoc0wmk6Dfg8sn2YuuSdAcDQyqj1gGWFeES1QA/IqIjw4G2Q05nOW24
+Tp/6z0q96eNZJvBWRGDNyO+ywbSAqxje9KWnUUFBT2Z5UtJ8CDWRVo6yTVhG50uIbl+bY8JboGZqyTPb
+5bmxiAXQc2v3od5veRNK6U+Rn380YkyVs0aGnCV0Imtw6a0AkgpSODdjiZ0rvlVOeYq5gW/CSgbhIkec
+YlDzNAdzcmsXNrCG9wspN4W1SJbuFXUrpN2skBBgpgGzp5jrldm3P1sQrUrSpGaSmx0n1FUd8aCJAlEu
+XZKC767Gv39suI1dVJSibu5cfQiXLmtiO4lY3DncitKfigkD+BRbcNaZ9xnEdhJLSDTDHly16It/kL6V
+qc8oNdHnUVvaJyYwMCITgUk/T3b3HI3jTe/+NRK3CdS9Pv5kZmfbZESx90uIH4bJgDMvcYKe5HUB+YGm
+TypZZ0Se6fBU5AM/k2UUNg9lf/knpwQ==
+ops_manager_ssh_public_key_name = pks-dev-ops-manager-key
+optional_ops_manager_dns =
+pks_api_endpoint = api.pks.pks-dev.pks.ml.com
+pks_api_lb_security_group_id = sg-0f0363686ef94c39b
+pks_api_target_groups = [
+    pks-dev-pks-tg-9021,
+    pks-dev-pks-tg-8443
+]
+pks_domain = pks-dev.pks.ml.com
+pks_master_iam_instance_profile_name = pks-dev_pks-master
+pks_master_security_group_id = sg-03ee1987d75142542
+pks_subnet_availability_zones = [
+    ap-south-1a,
+    ap-south-1c
+]
+pks_subnet_cidrs = [
+    10.0.4.0/24,
+    10.0.5.0/24
+]
+pks_subnet_gateways = [
+    10.0.4.1,
+    10.0.5.1
+]
+pks_subnet_ids = [
+    subnet-0a7ecaaaa4be74475,
+    subnet-07a2023fb6d91b0a0
+]
+pks_subnets = [
+    subnet-0a7ecaaaa4be74475,
+    subnet-07a2023fb6d91b0a0
+]
+pks_worker_iam_instance_profile_name = pks-dev_pks-worker
+public_subnet_availability_zones = [
+    ap-south-1a,
+    ap-south-1c
+]
+public_subnet_cidrs = [
+    10.0.0.0/24,
+    10.0.1.0/24
+]
+public_subnet_ids = [
+    subnet-0384315a9d3d3a7d1,
+    subnet-028d423f0824c48f9
+]
+public_subnets = [
+    subnet-0384315a9d3d3a7d1,
+    subnet-028d423f0824c48f9
+]
+rds_address =
+rds_password = <sensitive>
+rds_port =
+rds_username =
+region = ap-south-1
+services_subnet_availability_zones = [
+    ap-south-1a,
+    ap-south-1c
+]
+services_subnet_cidrs = [
+    10.0.8.0/24,
+    10.0.9.0/24
+]
+services_subnet_gateways = [
+    10.0.8.1,
+    10.0.9.1
+]
+services_subnet_ids = [
+    subnet-01738f44466608bde,
+    subnet-0559dfb1a8011cfdb
+]
+services_subnets = [
+    subnet-01738f44466608bde,
+    subnet-0559dfb1a8011cfdb
+]
+ssl_cert = <sensitive>
+ssl_private_key = <sensitive>
+tags = {
+  Application = Cloud Foundry
+  Environment = pks-dev
+  Name = ml-pks-dev-demo
+  Owner = SudevM
+  Project = pks-dev
+  Team = Dev
+}
+vms_security_group_id = sg-07ed70441eaf53ec1
+vpc_id = vpc-0eb0d33e71e6cf27c
+
+C:\PKS\terraforming-pks>
+
+C:\PKS\terraforming-pks>
